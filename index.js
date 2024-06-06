@@ -58,6 +58,32 @@ function inputText(event){
 let form = document.querySelector("#form");
 form.addEventListener("submit",inputText);
 
+function displayForecast(){
+  let forecast = document.querySelector("#weather-forecast");
+
+  let days = ["Sun","Mon","Tue","Wed","Thu"];
+  let forecastHtml = "";
+
+  days.forEach(function (day){
+
+    forecastHtml += `<div class="weather-forecast">
+    <p class="weather-forecast-date">${day}</p>
+    <img
+      src="https://shecodes-assets.s3.amazonaws.com/api/weather/icons/scattered-clouds-night.png"
+      alt="weather-icon"
+      class="forecast-icon"
+    />
+    <div class="forecast-temperatures">
+      <span><strong>19°C</strong> 14°C </span>
+    </div>
+    </div>`;
+  });
+
+  forecast.innerHTML = forecastHtml;
+}
+
+displayForecast();
+
 
 
 
