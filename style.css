@@ -17,7 +17,7 @@ body {
 #weather-icon {
   margin-left: 200px;
   position: absolute;
-  top: 10;
+  margin-bottom: 140px;
 
 }
 .text {
@@ -65,7 +65,7 @@ strong {
 }
 .temperature {
   position: absolute;
-  top: 10;
+  margin-bottom: 190px;
   margin-left: 400px;
   font-size: 50px;
   font-weight: bold;
