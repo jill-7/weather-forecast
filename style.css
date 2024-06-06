@@ -75,21 +75,27 @@ footer{
   font-family: monospace;
   font-size: 16px;
 }
-.weather-forecast {
+#weather-forecast {
   text-align: center;
   display: flex;
-  
- 
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 20px;
+  margin-right: 10px;
 
 }
+.day-forecast {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
 .forecast-icon {
   margin-top: -30px;
 }
 .forecast-temperatures {
-  margin: -20px 8px 30px 0;
   color: #F6528E;
-  display: flex;
-  
   
   
 }
